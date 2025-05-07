@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+body{
+  background-color: #1e1e1e;
+}
+
+/* start of navigation bar */
+header {
+  background-color: #000;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5%;
+  flex-wrap: wrap;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  padding-left: 30px;
+  color: #fff;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 20px;
+  transition: 0.25s ease;
+}
+
+.navigation :hover {
+  color: #8ab4f8;
+}
+
+.navigation i {
+  color: #fff;
+  font-size: 1em;
+  padding-right: 30px;
+  border-radius: 10px;
+  transition: 0.25s ease;
+}
+
+.navigation i:hover {
+  color:#8ab4f8;
+}
+/* end of navigation bar */
+
+.main {
+  padding:100px 200px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background:url(images/welcome-hero/welcome-banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment:scroll;
+}
+
+.main h2 {
+  color:#fff;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #8ab4f8;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: #ddd;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-button {
+  color: #fff;
+  background-color: #1a73e8;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9em 2em;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+}
+
+.main-button:hover {
+  background-color: #3c60f4;
+  transform: scale(1.1);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #8ab4f8;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  width: 17em;
+  box-shadow: 0 5px 25px rgba(255,255,255,0.05);
+  border-radius: 2px;
+  padding: 17px;
+  margin:15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #8ab4f8;
+  font-size: 6em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #8ab4f8;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.carlist {
+  padding: 100px 50px;
+  background-color: #121212;
+
+}
+
+.carlist-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carlist-title h3 {
+  color: #cccccc;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.carlist-title h2 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.line {
+  background-color: #8ab4f8;
+  width: 70px;
+  height: 3px;
+  margin: 10px auto 40px auto;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.car-details {
+  max-width: 500px;
+}
+
+.car-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.info {
+  font-size:16px;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.carlist button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius:5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.carlist button:hover {
+  background-color: #3c60f4;
+}
+
+/* Featured cars */
+.featured-cars-Container {
+  margin-top: 0px;
+  padding: 40px;
+  font-family: sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.featured-cars-Container span {
+  justify-content: center;
+  margin-bottom: 50px;
+  align-items: center;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cars {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.car {
+  width: 300px;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.car img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 5px 0;
+}
+
+.features p {
+  width: 50%;
+  margin: 2px 0px;
+}
+
+.description h4 {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.description h5 {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.description p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Search */
+.container {
+  background-color: #1e1e1e;
+  max-width: 1000px;
+  margin: -50px auto 70px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px auto 0;
+  display: block;
+}
+
+button:hover {
+  background-color: #3c60f4;
+}
+
+/* Client section */
+.client-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+}
+
+.client-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #eee;
+}
+
+.client-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.client-card {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.05);
+  width: 300px;
+  text-align: center;
+  color: #ddd;
+}
+
+.client-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.client-card p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.client-card h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #f1f1f1;
+}
+
+.client-card span {
+  font-size: 16px;
+  color: #aaa;
+}
+
+.client-card:hover {
+  background-color:#3c60f4;
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+}
+
+.client-card:hover h4,
+.client-card:hover span,
+.client-card:hover p {
+  color: #fff;
+}
+
+.brand-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  background-color: #1b1b1b;
+}
+
+.brand-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Contact */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  background-color:#121212;
+  color: white;
+  padding: 40px;
+  padding-bottom: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container div {
+  flex: 1;
+  padding: 10px;
+}
+
+.column1 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.p1 {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.column2 h3, .column3 h3, .column5 h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.column2 p, .column3 p, .column4 p, .column5 p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.column2 p:hover,
+.column3 p:hover,
+.column4 p:hover {
+  padding-left:15px ;
+}
+
+.column5 .email {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align:left;
+  font-size: 12px;
+  background-color:#121212;
+  color: #999;
+  padding-top: 15px;
+  padding-left: 45px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .main h2 {
+    font-size: 1.6em;
+  }
+
+  .main-button {
+    font-size: 1em;
+    padding: 0.8em 1.5em;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .client-container, .featured-cars-Container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+}
