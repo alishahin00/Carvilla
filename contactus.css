@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+      background: url('images/back\ ground\ Contactus.jpg') no-repeat center center  fixed ;
+      background-size: cover;
+      
+    }
+    
+    .form-container {
+      background:rgba(255, 255, 255, 0.85);
+      width: 350px;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 10px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+    
+    button {
+      width: 95%;
+      padding: 10px;
+      background-color: #444;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #222;
+    }
